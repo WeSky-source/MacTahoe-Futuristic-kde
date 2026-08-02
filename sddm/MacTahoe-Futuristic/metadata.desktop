@@ -1,0 +1,17 @@
+[SddmGreeterTheme]
+Name=MacTahoe-Futuristic
+Description=MacTahoe reworked with a warm-charcoal + amber/teal futuristic palette (fork of vinceliuice/MacTahoe-kde)
+Author=VinceLiuice
+Copyright=(c) 2014, Vince Liuice. Futuristic palette fork (c) 2026, WeSky-source.
+License=CC-BY-SA
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/vinceliuice/MacTahoe-kde
+Screenshot=Preview.jpeg
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=vinceliuice@hotmail.com
+Theme-Id=MacTahoe-Futuristic
+Theme-API=2.0
+QtVersion=6
