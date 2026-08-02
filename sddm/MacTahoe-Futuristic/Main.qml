@@ -30,6 +30,10 @@ Item {
 
     Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
     Kirigami.Theme.inherit: false
+    Kirigami.Theme.textColor: "#f5f1ec"
+    Kirigami.Theme.disabledTextColor: "#b3a08d"
+    Kirigami.Theme.highlightColor: "#00d1da"
+    Kirigami.Theme.backgroundColor: "#231b16"
 
     width: 1600
     height: 900
@@ -57,6 +61,33 @@ Item {
                 sceneBackgroundColor: config.color
                 sceneBackgroundImage: config.background
             }
+        }
+    }
+
+    Column {
+        id: brandMark
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
+        anchors.topMargin: Kirigami.Units.gridUnit * 2
+        spacing: Kirigami.Units.smallSpacing
+        opacity: 0.7
+        z: 2
+
+        Image {
+            anchors.horizontalCenter: parent.horizontalCenter
+            source: "assets/mark.svg"
+            sourceSize.width: 26
+            sourceSize.height: 26
+            width: 26
+            height: 26
+        }
+        Text {
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: "TAHOE"
+            color: "#f5f1ec"
+            font.family: "monospace"
+            font.pixelSize: 11
+            font.letterSpacing: font.pixelSize * 0.3
         }
     }
 

@@ -1,4 +1,3 @@
 [General]
-background=Background.jpeg
 showClock=true
-type=image
+type=color
