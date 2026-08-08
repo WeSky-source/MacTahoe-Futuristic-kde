@@ -6,9 +6,18 @@ A community palette fork of [vinceliuice/MacTahoe-kde](https://github.com/vincel
 
 - **Palette**: warm charcoal near-black background (`rgb(25,18,13)` / alt `rgb(35,27,22)`), teal accent (`rgb(0,209,218)`), amber/orange accent (`rgb(240,166,70)`), off-white foreground (`rgb(245,241,236)`) — applied across the color scheme, Aurorae window decoration, Plasma desktop theme, and look-and-feel package.
 - **Icons**: a `MacTahoe-Futuristic` icon theme forked from `MacTahoe-dark`. Folder icons, the generic-app fallback icon, places/devices icons, and any icon that used the base theme's Breeze-blue accent (`#3daee9`, `#5294e2`, and related blue-family gradient stops) were recolored into the teal/amber pair — teal for primary accent, amber for secondary/highlight elements like the folder tab. Gradients were kept as gradients (not flattened) for a retro-futuristic glow rather than flat fills. Third-party app logos were intentionally left untouched — only the theme's own generic/fallback icons and UI-accent colors were repainted, since that's what actually shows up everywhere in the interface.
-- **Cursors**: a `MacTahoe-Futuristic-cursors` theme forked from `MacTahoe-dark-cursors`. The scalable SVG cursor sources that exist in the upstream package (the animated `wait`/`progress` spinners and `openhand`) were recolored into an alternating teal/amber pattern. **Caveat**: the upstream `MacTahoe-dark-cursors` package ships most single-frame cursors (pointer, default arrow, text, resize handles, etc.) only as pre-compiled Xcursor binaries, with no SVG source present in `cursors_scalable/` for them — only `wait`, `progress`, and `openhand` have real source files. Regenerating the compiled bitmaps would require `xcursorgen` (not installed, and installing it needs root, which this project intentionally never does). So the compiled `cursors/` directory is carried over unmodified — most cursors will still render with the original blue accent until someone rebuilds the bitmaps from recolored SVGs.
+- **Cursors**: a `MacTahoe-Futuristic-cursors` theme forked from `MacTahoe-dark-cursors`. The scalable SVG cursor sources that exist in the upstream package (the animated `wait`/`progress` spinners and `openhand`) were recolored into an alternating teal/amber pattern and compiled into the live Xcursor bitmaps with `xcursorgen`. The remaining single-frame cursors (pointer, default arrow, text, resize handles, etc.) are plain grayscale by design upstream — they were never Breeze-blue to begin with, so there was nothing to recolor there.
 - **SDDM login theme**: a `MacTahoe-Futuristic` SDDM theme staged under `sddm/MacTahoe-Futuristic/`, forked from `MacTahoe-Dark`. The accent color (`theme.conf`) and the button/login SVG assets were repainted from `#1d99f3`/`#3daee9` to the teal accent.
 - **Compositor tuning**: this fork favors a resource-light look over heavy glass/blur. See "Performance notes" below for the exact settings — kept out of the packaged files since they're user compositor config, not theme assets.
+
+## Preview
+
+Real screenshots, unedited, from a live install — no mockups.
+
+|  |  |
+|---|---|
+| ![Dolphin file manager showing the theme's teal folder icons and charcoal color scheme](screenshots/dolphin.png) | ![System Settings Global Theme page with MacTahoe-Futuristic selected](screenshots/global-theme-settings.png) |
+| Dolphin — teal folder icons, charcoal background | System Settings — selectable as one Global Theme entry |
 
 ## Install
 
