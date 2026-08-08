@@ -13,7 +13,7 @@
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
      id="namedview19"
-     pagecolor="#000fff"
+     pagecolor="#00d1da"
      bordercolor="#ffffff000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
@@ -39,13 +39,13 @@
        y2="903.099"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#ffd305"
-         style="stop-color:#ffd305;stop-color:color(display-p3 1 .8275 .0196);stop-opacity:1"
+         stop-color="#f0a646"
+         style="stop-color:#f0a646;stop-color:color(display-p3 1 .8275 .0196);stop-opacity:1"
          id="stop1" />
       <stop
          offset="1"
-         stop-color="#fdcf01"
-         style="stop-color:#fdcf01;stop-color:color(display-p3 .9922 .8118 .0039);stop-opacity:1"
+         stop-color="#f0a646"
+         style="stop-color:#f0a646;stop-color:color(display-p3 .9922 .8118 .0039);stop-opacity:1"
          id="stop2" />
     </linearGradient>
     <linearGradient
@@ -56,13 +56,13 @@
        y2="1146.96"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#52cf30"
-         style="stop-color:#52cf30;stop-color:color(display-p3 .3216 .8118 .1882);stop-opacity:1"
+         stop-color="#4de8ee"
+         style="stop-color:#4de8ee;stop-color:color(display-p3 .3216 .8118 .1882);stop-opacity:1"
          id="stop3" />
       <stop
          offset="1"
-         stop-color="#3bbd1c"
-         style="stop-color:#3bbd1c;stop-color:color(display-p3 .2314 .7412 .1098);stop-opacity:1"
+         stop-color="#4de8ee"
+         style="stop-color:#4de8ee;stop-color:color(display-p3 .2314 .7412 .1098);stop-opacity:1"
          id="stop4" />
     </linearGradient>
     <linearGradient
@@ -73,13 +73,13 @@
        y2="1016.5"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#14adf6"
-         style="stop-color:#14adf6;stop-color:color(display-p3 .0784 .6784 .9647);stop-opacity:1"
+         stop-color="#00d1da"
+         style="stop-color:#00d1da;stop-color:color(display-p3 .0784 .6784 .9647);stop-opacity:1"
          id="stop5" />
       <stop
          offset="1"
-         stop-color="#1191f4"
-         style="stop-color:#1191f4;stop-color:color(display-p3 .0667 .5686 .9569);stop-opacity:1"
+         stop-color="#00d1da"
+         style="stop-color:#00d1da;stop-color:color(display-p3 .0667 .5686 .9569);stop-opacity:1"
          id="stop6" />
     </linearGradient>
     <linearGradient
@@ -90,13 +90,13 @@
        y2="912.055"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#ca70e1"
-         style="stop-color:#ca70e1;stop-color:color(display-p3 .7922 .4392 .8824);stop-opacity:1"
+         stop-color="#00a8b0"
+         style="stop-color:#00a8b0;stop-color:color(display-p3 .7922 .4392 .8824);stop-opacity:1"
          id="stop7" />
       <stop
          offset="1"
-         stop-color="#b452cb"
-         style="stop-color:#b452cb;stop-color:color(display-p3 .7059 .3216 .7961);stop-opacity:1"
+         stop-color="#00a8b0"
+         style="stop-color:#00a8b0;stop-color:color(display-p3 .7059 .3216 .7961);stop-opacity:1"
          id="stop8" />
     </linearGradient>
     <linearGradient
@@ -107,13 +107,13 @@
        y2="1141.62"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#ff645d"
-         style="stop-color:#ff645d;stop-color:color(display-p3 1 .3922 .3647);stop-opacity:1"
+         stop-color="#c9832f"
+         style="stop-color:#c9832f;stop-color:color(display-p3 1 .3922 .3647);stop-opacity:1"
          id="stop9" />
       <stop
          offset="1"
-         stop-color="#ff4332"
-         style="stop-color:#ff4332;stop-color:color(display-p3 1 .2627 .1961);stop-opacity:1"
+         stop-color="#c9832f"
+         style="stop-color:#c9832f;stop-color:color(display-p3 1 .2627 .1961);stop-opacity:1"
          id="stop10" />
     </linearGradient>
     <linearGradient
@@ -124,13 +124,13 @@
        y2="1006.5"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#fbb114"
-         style="stop-color:#fbb114;stop-color:color(display-p3 .9843 .6941 .0784);stop-opacity:1"
+         stop-color="#f0a646"
+         style="stop-color:#f0a646;stop-color:color(display-p3 .9843 .6941 .0784);stop-opacity:1"
          id="stop11" />
       <stop
          offset="1"
-         stop-color="#ff9508"
-         style="stop-color:#ff9508;stop-color:color(display-p3 1 .5843 .0314);stop-opacity:1"
+         stop-color="#d9822e"
+         style="stop-color:#d9822e;stop-color:color(display-p3 1 .5843 .0314);stop-opacity:1"
          id="stop12" />
     </linearGradient>
     <filter
@@ -169,32 +169,32 @@
      transform="rotate(-150,13.5,23.500002)">
     <path
        d="M 12.046,7.544 A 6,6 0 0 1 16.5,16.5 6,6 0 0 0 6.52,15.877 10,10 0 0 1 12.046,7.544"
-       style="fill:#ffd305;fill-opacity:1"
+       style="fill:#f0a646;fill-opacity:1"
        transform="matrix(0.55,0,0,0.55,4.425,14.425)"
        id="path12" />
     <path
        d="M 6.52,15.877 A 6,6 0 0 1 16.5,16.5 6,6 0 0 0 10.97,24.834 9.99,9.99 0 0 1 6.52,15.877"
-       style="fill:#52cf30;fill-opacity:1"
+       style="fill:#4de8ee;fill-opacity:1"
        transform="matrix(0.55,0,0,0.55,4.425,14.425)"
        id="path13" />
     <path
        d="M 10.97,24.834 A 6,6 0 0 1 16.5,16.5 6,6 0 0 0 20.955,25.455 9.96,9.96 0 0 1 16.5,26.5 9.95,9.95 0 0 1 10.97,24.834"
-       style="fill:#14adf6;fill-opacity:1"
+       style="fill:#00d1da;fill-opacity:1"
        transform="matrix(0.55,0,0,0.55,4.425,14.425)"
        id="path14" />
     <path
        d="M 20.955,25.456 A 6,6 0 0 1 16.5,16.5 a 6,6 0 0 0 9.98,0.622 10,10 0 0 1 -5.527,8.333"
-       style="fill:#ca70e1;fill-opacity:1"
+       style="fill:#00a8b0;fill-opacity:1"
        transform="matrix(0.55,0,0,0.55,4.425,14.425)"
        id="path15" />
     <path
        d="M 26.48,17.123 A 6,6 0 0 1 16.5,16.5 a 6,6 0 0 0 5.53,-8.334 9.99,9.99 0 0 1 4.45,8.957"
-       style="fill:#ff645d;fill-opacity:1"
+       style="fill:#c9832f;fill-opacity:1"
        transform="matrix(0.55,0,0,0.55,4.425,14.425)"
        id="path16" />
     <path
        d="M 22.03,8.166 A 6,6 0 0 1 16.5,16.5 6,6 0 0 0 12.046,7.544 9.96,9.96 0 0 1 16.5,6.5 c 2.044,0 3.946,0.613 5.53,1.666"
-       style="fill:#fbb114;fill-opacity:1"
+       style="fill:#f0a646;fill-opacity:1"
        transform="matrix(0.55,0,0,0.55,4.425,14.425)"
        id="path17" />
   </g>
