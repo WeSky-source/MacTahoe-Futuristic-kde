@@ -1,17 +1,14 @@
 [kcminputrc][Mouse]
-cursorTheme=MacTahoe-dark
+cursorTheme=MacTahoe-Futuristic-cursors
 
 [kdeglobals][General]
 ColorScheme=MacTahoeFuturistic
 
 [kdeglobals][Icons]
-Theme=MacTahoe-dark
+Theme=MacTahoe-Futuristic
 
 [kdeglobals][KDE]
 LookAndFeelPackage=com.github.vinceliuice.MacTahoe-Futuristic
-
-[kdeglobals][KDE]
-widgetStyle=kvantum-dark
 
 [kwinrc][DesktopSwitcher]
 LayoutName=org.kde.breeze.desktop

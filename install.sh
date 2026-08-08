@@ -31,21 +31,27 @@ mkdir -p "$COLORSCHEME_DIR"
 cp "$REPO_DIR/color-scheme/MacTahoeFuturistic.colors" "$COLORSCHEME_DIR/"
 echo "✓ Installed color scheme -> $COLORSCHEME_DIR/MacTahoeFuturistic.colors"
 
-cat <<EOF
+echo
+echo "▶ Applying theme to your current session..."
+if command -v plasma-apply-lookandfeel &>/dev/null; then
+    plasma-apply-lookandfeel -a com.github.vinceliuice.MacTahoe-Futuristic
+    echo "✓ Applied — colors, icons, cursor, window decoration, and Plasma style are all live now."
+else
+    echo "⚠ plasma-apply-lookandfeel not found — apply manually via System Settings > Appearance > Global Theme."
+fi
 
---------------------------------------------------------------------
-All user-space components installed. To finish:
+echo
+read -rp "Also install the SDDM login screen theme? [needs sudo] (y/N) " reply
+if [[ "$reply" =~ ^[Yy]$ ]]; then
+    sudo cp -r "$REPO_DIR/sddm/MacTahoe-Futuristic" /usr/share/sddm/themes/MacTahoe-Futuristic
+    conf=/etc/sddm.conf.d/mactahoe-futuristic.conf
+    printf '[Theme]\nCurrent=MacTahoe-Futuristic\n' | sudo tee "$conf" > /dev/null
+    echo "✓ SDDM theme installed and set active in $conf"
+else
+    echo "  Skipped. Run this later if you change your mind:"
+    echo "    sudo cp -r \"$REPO_DIR/sddm/MacTahoe-Futuristic\" /usr/share/sddm/themes/"
+    echo "    then set [Theme] Current=MacTahoe-Futuristic in /etc/sddm.conf.d/*.conf"
+fi
 
-1. Apply via System Settings > Appearance > Global Theme
-   (select "MacTahoe-Futuristic"), or per-component in the relevant
-   Appearance sub-pages (Colors, Icons, Cursors, Window Decorations,
-   Plasma Style).
-
-2. SDDM login theme (needs root, NOT done by this script):
-
-     sudo cp -r "$REPO_DIR/sddm/MacTahoe-Futuristic" /usr/share/sddm/themes/MacTahoe-Futuristic
-
-   then set it in /etc/sddm.conf.d/*.conf under [Theme] Current=MacTahoe-Futuristic
-   (or via System Settings > SDDM if the KCM is installed).
---------------------------------------------------------------------
-EOF
+echo
+echo "Done."

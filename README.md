@@ -13,12 +13,17 @@ A community palette fork of [vinceliuice/MacTahoe-kde](https://github.com/vincel
 ## Install
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/WeSky-source/MacTahoe-Futuristic-kde.git
 cd MacTahoe-Futuristic-kde
 ./install.sh
 ```
 
-`install.sh` copies each piece into the correct XDG user location:
+That's it — the script copies every piece into place *and* applies the theme to your current session (colors, icons, cursor, window decoration, Plasma style, all in one shot). It'll ask once, at the end, whether you also want the SDDM login-screen theme installed — that's the only step needing `sudo` (SDDM themes live under `/usr/share/sddm/`), so it's opt-in and never runs silently.
+
+Nothing else to click through. If you ever want to reapply or switch away and back, the whole thing is also selectable as a single entry: **System Settings > Appearance > Global Theme > "MacTahoe-Futuristic"**.
+
+<details>
+<summary>Where things get installed (only matters if you're uninstalling or debugging)</summary>
 
 | Component | Destination |
 |---|---|
@@ -28,16 +33,10 @@ cd MacTahoe-Futuristic-kde
 | Color scheme | `~/.local/share/color-schemes/` |
 | Icon theme | `~/.local/share/icons/` |
 | Cursor theme | `~/.icons/` |
+| SDDM theme (optional, needs sudo) | `/usr/share/sddm/themes/` |
 
-It does **not** touch `/usr` or run `sudo`. The SDDM login theme needs root, so the script prints a manual copy command instead of running it for you:
-
-```bash
-sudo cp -r sddm/MacTahoe-Futuristic /usr/share/sddm/themes/
-```
-
-Then set it as the active theme in `/etc/sddm.conf.d/*.conf` under `[Theme] Current=MacTahoe-Futuristic`, or via the SDDM KCM in System Settings if installed.
-
-After installing, apply the theme via **System Settings > Appearance > Global Theme** (pick "MacTahoe-Futuristic"), or set each piece individually in the relevant Appearance sub-pages.
+Nothing outside `$HOME` is touched unless you say yes to the SDDM prompt.
+</details>
 
 ## Performance notes
 
